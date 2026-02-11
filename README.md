@@ -5,23 +5,33 @@ Built with LangChain + OpenAI + ChromaDB + Streamlit + Docker.
 
 📄 [📄 Open the App on Streamlit](https://llm-powered-pdf-research-assistant-rag.streamlit.app/)
 
+<img width="1536" height="1024" alt="image2" src="https://github.com/user-attachments/assets/47cc37a4-6da9-4029-a923-2ce1d2aad13b" />
 
 ---
-<img width="1280" height="800" alt="Ekran Resmi 2026-02-09 18 10 24" src="https://github.com/user-attachments/assets/923b8a5f-fe9e-4b3d-907e-f634e73903a6" />
-
 🚀 Features
+
 ✅ Upload research PDFs
+
 ✅ Automatic document parsing
+
 ✅ Intelligent text chunking
+
 ✅ OpenAI embeddings
+
 ✅ Persistent Chroma vector database
+
 ✅ Retrieval of relevant evidence
+
 ✅ Structured information extraction
+
 ✅ Source-grounded outputs
+
 ✅ Transparent reasoning
+
 ✅ Container-ready deployment
 
 🧠 How It Works
+
 A PDF document is uploaded.
 The file is loaded using PyPDFLoader.
 Text is split into semantic chunks.
@@ -37,6 +47,7 @@ Supporting source passages
 This ensures answers are traceable and verifiable.
 
 🏗️ Tech Stack
+
 Python
 Streamlit
 LangChain
