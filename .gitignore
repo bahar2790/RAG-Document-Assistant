@@ -1,0 +1,8 @@
+.env
+venv/
+myenv/
+vectorstore_test/
+__pycache__/
+.DS_Store
+
+
