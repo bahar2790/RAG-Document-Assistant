@@ -1,10 +1,7 @@
 📄 LLM-Powered PDF Research Assistant (RAG)
-
-An end-to-end **Retrieval Augmented Generation (RAG)** application that allows users to upload a research PDF and automatically extract structured bibliographic information with supporting sources and reasoning.
-
-
-
-Built with **LangChain + OpenAI + ChromaDB + Streamlit + Docker**.
+An end-to-end Retrieval Augmented Generation (RAG) system that automatically extracts structured academic information from research papers.
+Users upload a PDF and the system processes the document, retrieves the most relevant evidence, and generates reliable, explainable outputs such as title, authors, publication year, and summary.
+Built with LangChain + OpenAI + ChromaDB + Streamlit + Docker.
 
 📄 [Uygulamayı Streamlit’de Aç](https://llm-powered-pdf-research-assistant-rag.streamlit.app/)
 
@@ -12,48 +9,42 @@ Built with **LangChain + OpenAI + ChromaDB + Streamlit + Docker**.
 ---
 <img width="1280" height="800" alt="Ekran Resmi 2026-02-09 18 10 24" src="https://github.com/user-attachments/assets/923b8a5f-fe9e-4b3d-907e-f634e73903a6" />
 
+🚀 Features
+✅ Upload research PDFs
+✅ Automatic document parsing
+✅ Intelligent text chunking
+✅ OpenAI embeddings
+✅ Persistent Chroma vector database
+✅ Retrieval of relevant evidence
+✅ Structured information extraction
+✅ Source-grounded outputs
+✅ Transparent reasoning
+✅ Container-ready deployment
 
+🧠 How It Works
+A PDF document is uploaded.
+The file is loaded using PyPDFLoader.
+Text is split into semantic chunks.
+OpenAI embeddings are created.
+Chunks are stored in ChromaDB.
+A predefined extraction prompt runs on the retriever.
+The LLM generates:
+Title
+Authors
+Publication date
+Summary
+Supporting source passages
+This ensures answers are traceable and verifiable.
 
+🏗️ Tech Stack
+Python
+Streamlit
+LangChain
+OpenAI
+ChromaDB
+Pydantic
+Docker
 
-## 🚀 Features
-
-✅ Upload PDF  
-✅ Automatic parsing  
-✅ Text chunking  
-✅ OpenAI embeddings  
-✅ Persistent Chroma vector database  
-✅ Similarity search  
-✅ Structured answers  
-✅ Source citation  
-✅ Reasoning transparency  
-✅ Containerized setup  
-
----
-
-## 🧠 How It Works
-
-1. Upload PDF.
-2. Document is loaded via `PyPDFLoader`.
-3. Split into chunks.
-4. Embeddings created using OpenAI.
-5. Stored in persistent ChromaDB.
-6. Retriever finds relevant parts.
-7. `gpt-4.1-mini` generates:
-   - Answer  
-   - Source  
-   - Reasoning  
-
----
-
-## 🏗️ Tech Stack
-
-- Python  
-- Streamlit  
-- LangChain  
-- OpenAI  
-- ChromaDB  
-- Pydantic  
-- Docker  
 
 ---
 
@@ -76,30 +67,30 @@ http://localhost:8501
 🔑 API Key
 Users provide their OpenAI API key at runtime from the interface.
 Keys are never stored.
-
-📂 Project Structure
 .
 ├── app/
 │   ├── dockerfile
 │   ├── functions.py
 │   ├── requirements.txt
 │   └── streamlit_app.py
-├── .env
+├── data/
+│   └── sample.pdf
 ├── .gitignore
 └── data_extraction_llms.ipynb
 
+
 📊 Output
-The system returns a table containing:
-Answer
-Source chunk
-Reasoning
-Ensuring explainability and traceability.
+The system produces structured, explainable results including:
+Extracted information
+Source text chunks
+Model reasoning
+Designed for trust, transparency, and auditability.
 
 💼 Use Cases
-Literature review
-Academic research
-Medical/scientific analysis
-Structured info extraction
+Literature review automation
+Academic research assistance
+Scientific document analysis
+Metadata extraction from PDFs
 
 👩‍💻 Author
 Bahar Akay
