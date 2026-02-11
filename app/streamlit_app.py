@@ -77,36 +77,14 @@ if uploaded_file is not None:
     st.write("Input Processed")
 
 # Generate answer
-# Generate default table
 with col1:
     if st.button("Generate table"):
         with st.spinner("Generating answer"):
+            # Load vectorstore:
 
-            answer = query_document(
-                vectorstore=st.session_state.vector_store,
-                query="Give me the title, summary, publication date, and authors of the research paper.",
-                api_key=st.session_state.api_key
-            )
-
-            st.write(answer)
-
-
-    # -------------------------------
-    # NEW PART → ASK YOUR OWN QUESTION
-    # -------------------------------
-
-    st.divider()
-    st.subheader("Ask anything about the PDF")
-
-    question = st.text_input("Type your question")
-
-    if question:
-        with st.spinner("Searching answer..."):
-
-            answer = query_document(
-                vectorstore=st.session_state.vector_store,
-                query=question,
-                api_key=st.session_state.api_key
-            )
-
-            st.write(answer)
+            answer = query_document(vectorstore = st.session_state.vector_store, 
+                                    query = "Give me the title, summary, publication date, and authors of the research paper.",
+                                    api_key = st.session_state.api_key)
+                            
+            placeholder = st.empty()
+            placeholder = st.write(answer) 
