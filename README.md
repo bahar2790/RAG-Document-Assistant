@@ -3,7 +3,7 @@ An end-to-end Retrieval Augmented Generation (RAG) system that automatically ext
 Users upload a PDF and the system processes the document, retrieves the most relevant evidence, and generates reliable, explainable outputs such as title, authors, publication year, and summary.
 Built with LangChain + OpenAI + ChromaDB + Streamlit + Docker.
 
-📄 [📄 Open the App on Streamlit](https://llm-powered-pdf-research-assistant-rag.streamlit.app/)
+📄 [📄 Open the App on Streamlit](https://rag-document-assistant-bahar.streamlit.app/)
 
 <img width="1536" height="1024" alt="image2" src="https://github.com/user-attachments/assets/47cc37a4-6da9-4029-a923-2ce1d2aad13b" />
 
